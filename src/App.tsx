@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import './App.css';
+import { PomodoroTimer } from './components/pomodoro-timer';
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello World! This is a React app created with TypeScript.</p>
-      </header>
+      <PomodoroTimer
+        PomodoroTime={1500}
+        shortRestTime={300}
+        longRestTime={900}
+        cycleCount={4}
+      />
     </div>
   );
 }

@@ -1,9 +1,10 @@
-.App {
-  text-align: center;
+body {
+  background-color: #282c34;
+  transition: background-color 300ms ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,4 +12,46 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.working {
+  background-color: #61dafb;
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pomodoro .timer {
+  font-size: 3em;
+}
+
+.pomodoro button {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.pomodoro button:hover {
+  transition: background-color 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pomodoro .buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }

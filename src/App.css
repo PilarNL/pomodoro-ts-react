@@ -55,3 +55,8 @@ body {
   gap: 10px;
   justify-content: center;
 }
+
+.pomodoro .details {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
